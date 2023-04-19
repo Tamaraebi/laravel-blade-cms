@@ -3,10 +3,11 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Models\Type;
 use App\Models\User;
 use App\Models\Project;
-
+use App\Models\Contact;
+use App\Models\Education;
+use App\Models\Skill;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,10 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/types', function(){
+Route::get('/skills', function(){
 
-    $types = Type::orderBy('title')->get();
-    return $types;
+    $skills = Skill::orderBy('language')->get();
+    return $skills;
 
 });
 
@@ -59,6 +60,33 @@ Route::get('/projects/profile/{project?}', function(Project $project){
     }
 
     return $project;
+
+});
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
+Route::get('/education', function(){
+
+    $education = Education::orderBy('institution')->get();
+
+    return $education;
+
+});
+
+Route::get('/contacts', function(){
+
+    $contacts = Contact::orderBy('title')->get();
+
+    return $contacts;
+
+});
+
+Route::get('/users', function(){
+
+    $users = User::orderBy('first')->get();
+
+    return $users;
 
 });
 

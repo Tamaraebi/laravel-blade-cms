@@ -3,8 +3,11 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\Type;
 use App\Models\Project;
+use App\Models\Skill;
+use App\Models\Education;
+use App\Models\ContactForm;
+use App\Models\Contact;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
