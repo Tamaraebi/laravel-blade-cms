@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('institution');
             $table->string('certification');
+            $table->string('description');
             $table->string('year');
             $table->string('image')->nullable();
             $table->timestamps();
