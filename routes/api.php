@@ -37,7 +37,7 @@ Route::get('/projects', function(){
     foreach($projects as $key => $project)
     {
         $projects[$key]['user'] = User::where('id', $project['user_id'])->first();
-        $projects[$key]['type'] = Type::where('id', $project['type_id'])->first();
+        $projects[$key]['skill'] = Skill::where('id', $project['skill_id'])->first();
 
         if($project['image'])
         {
@@ -52,7 +52,7 @@ Route::get('/projects', function(){
 Route::get('/projects/profile/{project?}', function(Project $project){
 
     $project['user'] = User::where('id', $project['user_id'])->first();
-    $project['type'] = Type::where('id', $project['type_id'])->first();
+    $project['skill'] = Skill::where('id', $project['skill_id'])->first();
 
     if($project['image'])
     {
@@ -62,16 +62,9 @@ Route::get('/projects/profile/{project?}', function(Project $project){
     return $project;
 
 });
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-});
-
-Route::get('/education', function(){
-
-    $education = Education::orderBy('institution')->get();
-
-    return $education;
-
 });
 
 Route::get('/contacts', function(){
@@ -82,6 +75,14 @@ Route::get('/contacts', function(){
 
 });
 
+Route::get('/education', function(){
+
+    $education = Education::orderBy('institution')->get();
+
+    return $education;
+
+});
+
 Route::get('/users', function(){
 
     $users = User::orderBy('first')->get();
@@ -89,4 +90,3 @@ Route::get('/users', function(){
     return $users;
 
 });
-

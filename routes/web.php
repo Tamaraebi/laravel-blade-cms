@@ -1,10 +1,13 @@
 <?php
 
 use App\Models\Project;
+use App\Models\Skill;
 use App\Http\Controllers\ConsoleController;
 use App\Http\Controllers\ProjectsController;
-use App\Http\Controllers\TypesController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\EducationController;
+use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\SkillsController;
 use Illuminate\Support\Facades\Route;
 
 /*

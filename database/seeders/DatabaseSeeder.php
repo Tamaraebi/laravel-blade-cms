@@ -6,7 +6,6 @@ use App\Models\User;
 use App\Models\Project;
 use App\Models\Skill;
 use App\Models\Education;
-use App\Models\ContactForm;
 use App\Models\Contact;
 use Illuminate\Database\Seeder;
 
@@ -21,11 +20,11 @@ class DatabaseSeeder extends Seeder
     {
 
         User::truncate();
-        Type::truncate();
+        Skill::truncate();
         Project::truncate();
         
         User::factory()->count(2)->create();
-        Type::factory()->count(3)->create();
+        Skill::factory()->count(3)->create();
         Project::factory()->count(4)->create();
             
     }
