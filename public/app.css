@@ -1,5 +1,8 @@
-#header {
-    background-color: rgb(150, 57, 57);
+body {
+    
+}
+header {
+    background-color: rgb(57, 62, 150);
     color: black;
   
 }
@@ -16,3 +19,28 @@
 #menu a:hover {
     color: red;
 }
+#content {
+    justify-content: center;
+    display: flex;
+
+    
+}
+#content li {
+    list-style: none;
+    background-color: rgba(154, 51, 0, 0.925);
+    margin-top: 15px;
+    color: rgb(16, 16, 16);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+  } 
+  
+#content li:hover {
+  
+    background-color: black;
+  
+} 
+  
+#content tr th{
+    background-color: rgb(219, 104, 10);
+  }
