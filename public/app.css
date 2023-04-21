@@ -1,8 +1,6 @@
-body {
-    
-}
+
 header {
-    background-color: rgb(57, 62, 150);
+    background-color: brown;
     color: black;
   
 }
@@ -13,26 +11,26 @@ header {
 #menu {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
 }
 #menu a:hover {
     color: red;
 }
 #content {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
-
+    float: left;
+    list-style-type:none;
     
 }
 #content li {
-    list-style: none;
-    background-color: rgba(154, 51, 0, 0.925);
+    background-color: brown;
     margin-top: 15px;
-    color: rgb(16, 16, 16);
+    color: white;
     padding: 20px;
-    font-size: 20px;
-    border-radius: 15px;
+    font-size: 25px;
+    border-radius: 30px;
   } 
   
 #content li:hover {

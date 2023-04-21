@@ -7,14 +7,19 @@
     <h2 class="w3-text-blue">About Me!</h2>
 
     <p>
-        Quisque felis ex, pellentesque vel elementum eu, bibendum vel massa. Donec id feugiat 
-        erat. Aliquam commodo rutrum velit, vitae vestibulum purus ullamcorper vestibulum. Orci 
-        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    I am a highly motivated and enthusiastic web development professional with a strong foundation in HTML, CSS, PHP, AWS and JavaScript seeking 
+    to join a constantly challenging work environment that enables the application of my knowledge, skills and experiences, promotes my intellectual 
+    development and career growth towards achieving corporate goals and vision. I have Proficiency in developing responsive websites and applications. 
+    Experienced in collaborating with cross-functional teams to achieve project goals. Strong problem-solving and communication skills with a passion for learning new technologies.
     </p>
 
     <h3>My Skills</h3>
 
     <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
         <li>PHP</li>
         <li>Laravel</li>
         <li>MySQL</li>
@@ -74,7 +79,7 @@
     <h2 class="w3-text-blue">Contact Me</h2>
 
     <p>
-        Phone: 111.222.3333
+        Phone: 613.501.7278
         <br>
         Email: <a href="mailto:email@address.com">email@address.com</a>
     </p>

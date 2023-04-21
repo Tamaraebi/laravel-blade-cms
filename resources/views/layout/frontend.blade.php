@@ -31,7 +31,8 @@
     Footer Text | 
     Copyright {{date('Y')}}
     <a href="#">Facebook</a> | 
-    <a href="#">Instagram</a>
+    <a href="#">Instagram</a> |
+    <a href="#">Linkedin</a>
 
     <br>
 
